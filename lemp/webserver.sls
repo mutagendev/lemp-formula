@@ -1,5 +1,5 @@
 include:
-  - deploy
+  - lemp.deploy
 
 
 nginx:

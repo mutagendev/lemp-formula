@@ -1,0 +1,22 @@
+{% set nginx = salt['grains.filter_by']({
+    'Debian': {
+        'package': 'nginx',
+        'service': 'nginx',
+        'user': 'www-data'
+    }
+}, merge=salt['pillar.get']('nginx:lookup')) %}
+
+{% set php5-fpm = salt['grains.filter_by']({
+    'Debian': {
+        'package': 'php5-fpm',
+        'service': 'php5-fpm'
+    }
+}, merge=salt['pillar.get']('php5-fpm:lookup')) %}
+
+{% set mysql = salt['grains.filter_by']({
+    'Debian': {
+        'server': 'mysql-server',
+        'client': 'mysql-client',
+        'service': 'mysql'
+    }
+}, merge=salt['pillar.get']('mysql:lookup')) %}

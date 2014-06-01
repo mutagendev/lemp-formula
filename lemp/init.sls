@@ -1,4 +1,4 @@
 include:
-  - lemp.webserver
-  - lemp.db
-  - lemp.appserver
+  - lemp.nginx
+  - lemp.mysql
+  - lemp.php

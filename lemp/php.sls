@@ -1,7 +1,7 @@
 {% from "lemp/map.jinja" import php5-fpm with context %}
 
 include:
-  - lemp.webserver
+  - lemp.nginx
 
 php5-fpm:
   pkg:

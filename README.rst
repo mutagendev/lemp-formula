@@ -25,9 +25,11 @@ service.
 ``lemp.nginx``
 ------------------
 
-Installs `nginx` webserver, enables service to start on boot and starts the service.
+Installs `nginx` webserver, enables service to start on boot and starts the
+service.
 
 ``lemp.php``
 ------------
 
-Installs `php5-fpm`, enables the service to start on boot, and starts the service.
+Installs `php5-fpm`, enables the service to start on boot, and starts the
+service. Requires ``lemp.nginx``.

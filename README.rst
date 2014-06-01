@@ -32,4 +32,4 @@ service.
 ------------
 
 Installs `php5-fpm`, enables the service to start on boot, and starts the
-service. Requires ``lemp.nginx``.
+service.

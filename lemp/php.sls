@@ -1,8 +1,5 @@
 {% from "lemp/map.jinja" import php5-fpm with context %}
 
-include:
-  - lemp.nginx
-
 php5-fpm:
   pkg:
     - latest
@@ -11,5 +8,3 @@ php5-fpm:
     - running
     - enable: True
     - name: {{ php5-fpm.service }}
-    - require:
-      - pkg: nginx
